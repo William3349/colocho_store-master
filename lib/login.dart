@@ -19,30 +19,30 @@ class _LoginScreenState extends State<LoginScreen> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Container(
+              children: const  [
+                 SizedBox(
                   width: 278,
                   height: 56,
-                  child: const TextField(
+                  child:  TextField(
                     decoration: InputDecoration(
                       labelText: "Usuario",
                       border: OutlineInputBorder(),
                     ),
                   ),
                 ),
-                const SizedBox(height: 28),
-                Container(
+                 SizedBox(height: 28),
+                SizedBox(
                   width: 278,
                   height: 56,
-                  child: const TextField(
+                  child:  TextField(
                     decoration: InputDecoration(
                       labelText: "Contraseña",
                       border: OutlineInputBorder(),
                     ),
                   ),
                 ),
-                const SizedBox(height: 22),
-                const Text(
+                 SizedBox(height: 22),
+                 Text(
                   "Olvidaste tu contraseña?",
                   style: TextStyle(
                     color: Color(0xFF09ADEA),
@@ -56,9 +56,9 @@ class _LoginScreenState extends State<LoginScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Otros métodos de autenticación",
-                  style: const TextStyle(
+                  style:  TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w600,
                   ),
@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(
                   height: 24,
                 ),
-                Container(
+                SizedBox(
                   width: 278.0,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
