@@ -19,30 +19,30 @@ class _LoginScreenState extends State<LoginScreen> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const  [
-                 SizedBox(
+              children: const [
+                SizedBox(
                   width: 278,
                   height: 56,
-                  child:  TextField(
+                  child: TextField(
                     decoration: InputDecoration(
                       labelText: "Usuario",
                       border: OutlineInputBorder(),
                     ),
                   ),
                 ),
-                 SizedBox(height: 28),
+                SizedBox(height: 28),
                 SizedBox(
                   width: 278,
                   height: 56,
-                  child:  TextField(
+                  child: TextField(
                     decoration: InputDecoration(
                       labelText: "Contraseña",
                       border: OutlineInputBorder(),
                     ),
                   ),
                 ),
-                 SizedBox(height: 22),
-                 Text(
+                SizedBox(height: 22),
+                Text(
                   "Olvidaste tu contraseña?",
                   style: TextStyle(
                     color: Color(0xFF09ADEA),
@@ -58,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 const Text(
                   "Otros métodos de autenticación",
-                  style:  TextStyle(
+                  style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w600,
                   ),
@@ -77,6 +77,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         decoration: const ShapeDecoration(
                           color: Color(0xFF1877F2),
                           shape: CircleBorder(),
+                           shadows: [
+                            BoxShadow(
+                              color: Colors.black26,
+                              offset: Offset(0, 2),
+                              blurRadius: 3.0,
+                            ),
+                          ],
                         ),
                         child: IconButton(
                           padding: const EdgeInsets.all(6.0),
@@ -91,14 +98,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         decoration: const ShapeDecoration(
                           color: Colors.white,
                           shape: CircleBorder(),
+                          shadows: [
+                            BoxShadow(
+                              color: Colors.black26,
+                              offset: Offset(0, 2),
+                              blurRadius: 3.0,
+                            ),
+                          ],
                         ),
                         child: IconButton(
                           padding: const EdgeInsets.all(6.0),
                           icon: const Image(
-                            image: AssetImage(
-                              'assets/images/icons/google_logo.png'
-                            )
-                            ),
+                              image: AssetImage(
+                                  'assets/images/icons/google_logo.png')),
                           color: Colors.black,
                           onPressed: () {},
                         ),
@@ -109,6 +121,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         decoration: const ShapeDecoration(
                           color: Colors.black,
                           shape: CircleBorder(),
+                           shadows: [
+                            BoxShadow(
+                              color: Colors.black26,
+                              offset: Offset(0, 2),
+                              blurRadius: 3.0,
+                            ),
+                          ],
                         ),
                         child: IconButton(
                           padding: const EdgeInsets.all(6.0),
