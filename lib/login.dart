@@ -1,3 +1,4 @@
+import 'package:colocho_store/home.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -77,7 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         decoration: const ShapeDecoration(
                           color: Color(0xFF1877F2),
                           shape: CircleBorder(),
-                           shadows: [
+                          shadows: [
                             BoxShadow(
                               color: Colors.black26,
                               offset: Offset(0, 2),
@@ -121,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         decoration: const ShapeDecoration(
                           color: Colors.black,
                           shape: CircleBorder(),
-                           shadows: [
+                          shadows: [
                             BoxShadow(
                               color: Colors.black26,
                               offset: Offset(0, 2),
@@ -155,7 +156,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                 RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(92.0),
                         ))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Home()),
+                      );
+                    },
                     child: const Text('Iniciar sesión'),
                   ),
                 ),
