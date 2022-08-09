@@ -1,5 +1,6 @@
 import 'package:colocho_store/column.dart';
 import 'package:colocho_store/home.dart';
+import 'package:colocho_store/row.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -124,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const ColumnScreen()
+                                  builder: (context) => const RowScreen(),
                                   ),
                             );
                           },
