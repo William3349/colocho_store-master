@@ -89,12 +89,16 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: 54.0,
                         height: 54.0,
                         decoration: const ShapeDecoration(
-                          color: Colors.black26,
+                          color: Colors.white,
                           shape: CircleBorder(),
                         ),
                         child: IconButton(
                           padding: const EdgeInsets.all(6.0),
-                          icon: const Icon(Icons.abc),
+                          icon: const Image(
+                            image: AssetImage(
+                              'assets/images/icons/google_logo.png'
+                            )
+                            ),
                           color: Colors.black,
                           onPressed: () {},
                         ),
