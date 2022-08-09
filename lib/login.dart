@@ -1,3 +1,4 @@
+import 'package:colocho_store/column.dart';
 import 'package:colocho_store/home.dart';
 import 'package:flutter/material.dart';
 
@@ -90,7 +91,13 @@ class _LoginScreenState extends State<LoginScreen> {
                           padding: const EdgeInsets.all(6.0),
                           icon: const Icon(Icons.facebook),
                           color: Colors.white,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ColumnScreen()),
+                            );
+                          },
                         ),
                       ),
                       Ink(
@@ -113,7 +120,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               image: AssetImage(
                                   'assets/images/icons/google_logo.png')),
                           color: Colors.black,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ColumnScreen()
+                                  ),
+                            );
+                          },
                         ),
                       ),
                       Ink(
